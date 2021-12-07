@@ -58,12 +58,8 @@ class AI:
 
                 self.board.pop()
 
-                print(local_score, move)
-
-            print('\ncache_hit: ' + str(self.cache_hit))
-            print('cache_miss: ' + str(self.cache_miss) + '\n')
-
-        print(str(global_score) + ' ' + str(chosen_move) + '\n')
+            print('\n' + 'Cache_Hit: ' + str(self.cache_hit) + ' && Cache_Miss: ' + str(self.cache_miss))
+        print('Global_Score: ' + str(global_score) + ' ==> Chosen Move: ' + str(chosen_move) + '\n')
 
         self.board.push(chosen_move)
 
